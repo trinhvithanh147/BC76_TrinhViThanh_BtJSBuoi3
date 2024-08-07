@@ -1,0 +1,195 @@
+<<!doctype html>
+    <html lang="en">
+
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+
+    </head>
+
+    <body>
+        <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bai1" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Bài 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bai2" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Bài 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bai3" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Bài 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bai4" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Bài 4</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bai5" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Bài 5</button>
+            </li>
+        </ul>
+        <!-- Bài 1 -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="home-tab">
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="luongNgay"
+                        aria-describedby="helpId"
+                        placeholder="Lương 1 ngày"
+                    />
+                </div>
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soNgayLam"
+                        aria-describedby="helpId"
+                        placeholder="Số ngày làm"
+                    />
+                </div>
+                <button class="btn btn-primary" id="tinhLuong">Tính lương</button>
+                <div id="tienLuongNhanDuoc"></div>
+            </div>
+            <!-- Bài 2 -->
+            <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập số thứ 1</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soThu1"
+                        aria-describedby="helpId"
+                        placeholder="Nhập số thứ 1"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập số thứ 2</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soThu2"
+                        aria-describedby="helpId"
+                        placeholder="Nhập số thứ 2"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập số thứ 3</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soThu3"
+                        aria-describedby="helpId"
+                        placeholder="Nhập số thứ 3"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập số thứ 4</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soThu4"
+                        aria-describedby="helpId"
+                        placeholder="Nhập số thứ 4"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nhập số thứ 5</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soThu5"
+                        aria-describedby="helpId"
+                        placeholder="Nhập số thứ 5"
+                    />
+                </div>
+                <button class="btn btn-primary" id="tinhTongDiemTrungBinh">Tổng Điểm Trung Bình</button>
+                <div id="ketQuaTongDiemTrungBinh"></div>
+            </div>
+            <!-- Bài 3 -->
+            <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="tienUSD"
+                        aria-describedby="helpId"
+                        placeholder="Nhập số tiền USD"
+                    />
+                </div>
+                <button class="btn btn-primary" id="tinhTienQuyDoi">Quy Đổi</button>
+                <div id="ketQuaTienQuyDoi"></div>
+            </div>
+            <!-- Bài 4 -->
+            <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="chieuDai"
+                        aria-describedby="helpId"
+                        placeholder="Nhập chiều dài"
+                    />
+                </div>
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="chieuRong"
+                        aria-describedby="helpId"
+                        placeholder="Nhập chiều rộng"
+                    />
+                </div>
+                <button class="btn btn-primary" id="tinhDienTichChuVi">Tính</button>
+                <div id="ketQuaDienTichChuVi"></div>
+            </div>
+            <!-- Bài 5 -->
+            <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id="soCo2ChuSo"
+                        aria-describedby="helpId"
+                        placeholder="Nhập vào 1 số có 2 chữ số"
+                    />
+                </div>
+                <button class="btn btn-primary" id="tinhTong2KySo">TínhTổng</button>
+                <div id="ketQuaTong2KySo"></div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
+    </body>
+
+    </html>
+    </bs5->
