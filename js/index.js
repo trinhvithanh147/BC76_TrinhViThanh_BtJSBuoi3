@@ -28,14 +28,14 @@ document.getElementById("tinhTongDiemTrungBinh").onclick=function(){
 
 //Bài 3
 
-function QuyDoiTienTe(tienUSD){
+function quyDoiTienTe(tienUSD){
     return tienUSD*23500;
 }
 
 document.getElementById("tinhTienQuyDoi").onclick=function(){
     let tienUSD=document.getElementById("tienUSD").value*1;
-    let QuyDoi = QuyDoiTienTe(tienUSD);
-    let tienTe = QuyDoi.toLocaleString("vi-VN", {
+    let quyDoi = quyDoiTienTe(tienUSD);
+    let tienTe = quyDoi.toLocaleString("vi-VN", {
         style: "currency",
         currency: "VND",
       });
@@ -53,9 +53,9 @@ function chuViHinhChuNhat(dai, rong){
 document.getElementById("tinhDienTichChuVi").onclick=function(){
     let chieuDai=document.getElementById("chieuDai").value*1;
     let chieuRong=document.getElementById("chieuRong").value*1;
-    let DienTich=dienTichHinhChuNhat(chieuDai,chieuRong);
+    let dienTich=dienTichHinhChuNhat(chieuDai,chieuRong);
     let chuVi=chuViHinhChuNhat(chieuDai,chieuRong);
-    document.getElementById("ketQuaDienTichChuVi").innerHTML=`Diện tích là ${DienTich}, Chu vi là ${chuVi}`
+    document.getElementById("ketQuaDienTichChuVi").innerHTML=`Diện tích là ${dienTich}, Chu vi là ${chuVi}`
 }
 
 // Bài 5
